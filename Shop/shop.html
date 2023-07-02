@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="./shop.css">
+</head>
+
+<body>
+    <nav id="navbar" class="navbar">
+        <div id="left-navbar" class="left-navbar">
+            <p>Me.shop</p>
+        </div>
+
+        <div id="right-navbar" class="right-navbar">
+            <a id="cartTab">My Cart</a>
+            <a id="profileTab">Profile</a>
+            <a id="logoutTab">Logout</a>
+        </div>
+    </nav>
+
+    <form class="filters" id="filterform">
+        <div class="colorFilter filter">
+            <h3>Colors</h3>
+            <div class="filterList">
+                <div class="filterItem">
+                    <input type="checkbox" id="Red">
+                    <label for="Red">Red</label>
+                </div>
+
+                <div class="filterItem">
+                    <input type="checkbox" id="Blue">
+                    <label for="Blue">Blue</label>
+                </div>
+
+                <div class="filterItem">
+                    <input type="checkbox" id="Black">
+                    <label for="Black">Black</label>
+                </div>
+
+                <div class="filterItem">
+                    <input type="checkbox" id="Green">
+                    <label for="Green">Green</label>
+                </div>
+
+
+                <div class="filterItem">
+                    <input type="checkbox" id="White">
+                    <label for="White">White</label>
+                </div>
+
+
+
+
+            </div>
+
+
+        </div>
+
+        <div class="sizesFilter filter">
+            <h3>Sizes</h3>
+            <div class="filterList">
+                <div class="filterItem">
+                    <input type="checkbox" id="S">
+                    <label for="S">S</label>
+                </div>
+
+                <div class="filterItem">
+                    <input type="checkbox" id="M">
+                    <label for="M">M</label>
+                </div>
+
+                <div class="filterItem">
+                    <input type="checkbox" id="L">
+                    <label for="L">L</label>
+                </div>
+
+                <div class="filterItem">
+                    <input type="checkbox" id="XL">
+                    <label for="XL">XL</label>
+                </div>
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+        <div class="Rating filter">
+            <h3>Rating</h3>
+            <div class="filterList">
+                <div class="rangeFilter">
+                    <span class="initalValue">0</span>
+                    <input type="range" class="range" value="0" min="0" max="5" step="0.1"
+                     onmousemove="rangeSlider(this.value)">
+                    <span class="endValue">5</span>
+                   
+                </div>
+                <p>Value: <span id="ratingValue"></span></p>
+            </div>
+
+        </div>
+
+        <div class="priceFilter filter">
+            <h3>Price Range</h3>
+            <div class="filterList">
+                <div class="filterItem">
+                    <input type="radio" id="0to25" name="priceRange">
+                    <label for="0to25">$0 to $25 </label>
+                </div>
+
+                <div class="filterItem">
+                    <input type="radio" id="25to50" name="priceRange">
+                    <label for="25to50">$25 to $50</label>
+                </div>
+
+                <div class="filterItem">
+                    <input type="radio" id="50to100" name="priceRange">
+                    <label for="50to100">$50 to $100</label>
+                </div>
+
+                <div class="filterItem">
+                    <input type="radio" id="greaterThan100"name="priceRange">
+                    <label for="greaterThan100">$100 onwards</label>
+                </div>
+
+
+            </div>
+        </div>
+
+    <button class="applyfilter" id="applyFilterbtn">Apply Filter</button>
+
+    </form>
+
+   
+    <section class="shopSection">
+
+         <div class="searchBarandCategories">
+        <input type="text" placeholder="Enter the product Title" id="seachInput">
+        <div class="categories">
+            <button id="allItemsBtn">All</button>
+            <button id="mensItemBtn">Mens</button>
+            <button id="womensItemBtn">Women</button>
+            <button id="jewelryItemsBtn">Jewelry</button>
+            <button id="electronicsItemBtn">Electronics</button>
+        </div>
+    </div>
+
+       
+
+
+        <div class="products">
+
+            <div class="mensClothing productCategory" id="mensCategory">
+                <h3>Mens Clothing</h3>
+                <div class="itemlist" id="mensitems"></div>
+               
+            </div>
+
+
+            <div class="womensClothing productCategory" id="womensCategory">
+                <h3>Womens Clothing</h3>
+                <div class="itemlist" id="womensitems"></div>
+               
+            </div>
+
+
+
+            <div class="jewelry productCategory" id="jewelryCategory">
+                <h3>Jewelry</h3>
+                <div class="itemlist" id="jewelryitems"></div>
+               
+            </div>
+
+
+            <div class="electronics productCategory" id="electronicsCategory">
+                <h3>Electronics</h3>
+                <div class="itemlist" id="electronincsitems">
+                    
+
+                  
+
+                     
+                         
+                </div>
+               
+            </div>
+        
+
+        </div>
+
+    </section>
+
+    <script>
+        function rangeSlider(value){
+            document.getElementById("ratingValue").innerHTML=value
+        }
+    </script>
+
+    <script src="./shop.js"></script>
+</body>
+
+</html>

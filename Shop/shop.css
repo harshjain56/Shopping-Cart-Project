@@ -1,0 +1,258 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+
+.navbar{
+    background-color: black;
+    color: white;
+    display: flex;
+    
+    padding: 20px 18px 20px;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+   z-index: 1;
+}
+
+.left-navbar{
+    font-size: 1.5em;
+    flex-grow: 0.95;
+
+}
+
+.right-navbar{
+ 
+   display: flex;
+   gap: 25px;
+   
+}
+
+.right-navbar>a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.2em;
+
+}
+
+.right-navbar>a:hover{
+    color:  rgba(255, 255, 255, 0.94)
+}
+
+
+
+.filters{
+     height: 100vh;
+     width: 10%;
+     display: flex;
+     flex-direction: column;
+     gap:20px;
+     color: white;
+     background-color: black;
+     position: fixed;
+     top:67px;
+     left:0px;
+     z-index: 1;
+ }
+
+
+ .filter{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding: 10px 0px 0px 20px;
+    border-top:2px solid white;
+}
+.filter>h3{
+    font-size: 1.2em;
+}
+
+.filterList{
+    display: flex;
+   flex-direction: column;
+    gap:10px;
+}
+
+.filterItem{
+    display: flex;
+    gap:10px;
+}
+
+.rangeFilter{
+
+    display: flex;
+    align-items: center;
+    gap:10px;
+
+}
+
+.range{
+    width: 80px;
+    height: 2px;
+    appearance: none;
+    background: black;
+    background: white;
+    border-radius: 10px;
+    
+}
+
+.range::-webkit-slider-thumb{
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background:white;
+}
+
+
+
+input[type="checkbox"] , input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #999999;
+   
+  }
+
+  .applyfilter{
+    margin-top: 5px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: 2px solid gray;
+    cursor: pointer;
+  }
+
+  .applyfilter:hover{
+    box-shadow: 0px 0px 10px gray;
+  }
+
+
+  .shopSection{
+
+    
+    position: absolute;
+    top: 70px;
+    margin-left: 10%;
+    width: 87.5%;
+    padding:15px ;
+    
+ 
+ }
+
+
+
+ .searchBarandCategories{
+   
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    
+ }
+
+ .searchBarandCategories>input{
+    padding: 10px;
+    outline: none;
+ }
+
+ .categories{
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    cursor: pointer;
+
+ }
+
+ .categories>button:hover{
+   background-color: black;
+   color: white;
+ }
+
+ .searchBarandCategories button{
+    padding: 10px;
+    white-space: nowrap;
+    background: white;
+    color: black;
+    width: 20%;
+ }
+
+
+ .categories::-webkit-scrollbar {
+    display: none;
+  }
+
+
+
+
+
+ .products{
+    border:1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    padding: 10px;
+ }
+ 
+
+ .productCategory>h3{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+ }
+
+ .itemlist{
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+ }
+
+ .itemlist::-webkit-scrollbar {
+    display: none;
+  }
+
+ .item{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: fit-content;
+    padding:5px;
+    
+ }
+
+ .item>img{
+    
+    width: 200px;
+    height: 200px;
+    border: 1px solid grey;;
+ }
+
+ .productTitle{
+    
+    width: 200px;
+    height: 130px;
+    text-align: left;
+    font-weight: bold;
+ }
+
+ .item>button{
+    padding: 10px;
+    background-color: black;
+    color: white;
+ }
+
+ .item>button:hover{
+    box-shadow: 0px 0px 5px black;
+ }
+
+ .priceandSize{
+    display: flex;
+    justify-content: space-between;
+ }
+
+
+
+
+  

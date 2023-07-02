@@ -1,0 +1,100 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+
+
+.navbar{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px 20px 40px;
+    align-items: center;
+}
+
+.left-navbar{
+    font-size: 1.5em;
+  
+
+}
+
+.right-navbar{
+ 
+   display: flex;
+   gap: 25px;
+}
+
+.right-navbar>a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.2em;
+
+}
+
+.right-navbar>a:hover{
+    color:  rgba(255, 255, 255, 0.94)
+}
+
+
+.infoSection{
+
+    border-bottom: 2px solid black;
+    padding: 20px 80px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+
+}
+
+.infoSection>h2{
+    font-size: 2em;
+}
+
+.profileInfo{
+
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+
+}
+
+.profileInfo>p{
+    font-weight: bold;
+}
+
+.update{
+    border-bottom: 2px solid black;
+    padding: 20px 80px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+
+.update>input{
+    width: 100%;
+    padding: 15px;
+}
+
+.update>button{
+    width: 10%;
+    padding: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.update>button:hover{
+    box-shadow: 0px 0px 10px black;
+}
+
+
+
+
+
+

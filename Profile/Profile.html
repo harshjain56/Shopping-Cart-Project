@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="./Profile.css">
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <div id="left-navbar" class="left-navbar">
+           <p>Me.Shop</p>  
+        </div>
+
+        <div id="right-navbar" class="right-navbar">
+          <a id="shopTab">Shop</a>
+          <a id="cartTab">MyCart</a>
+          <a id="logoutTab">Logout</a>
+        </div>
+    </nav>
+
+
+    <section class="infoSection">
+        <h2>My Profile</h2>
+        <div class="profileInfo">
+            <p id="name"></p>
+            <p id="email"></p>
+           
+        </div>
+    </section>
+
+
+    <form class="NameChangeSection update">
+        <h2>Edit Name</h2>
+         <input type="text" placeholder="First Name" id="newFirsttName">
+        <input type="text" placeholder="Last Name" id="newLastName">
+        <button type="submit" id="editNameBtn">Edit Name</button>
+    </form>
+
+    <form class="EmailChangeSection update">
+        <h2>Edit Email</h2>
+         <input type="email" placeholder="Old Email" id="oldEmail">
+        <input type="email" placeholder="New Email" id="newEmail">
+        <button type="submit" id="editEmailBtn">Edit Email</button>
+    </form>
+     
+    <form class="passwordChangeSection update">
+        <h2>Edit Password</h2>
+         <input type="password" placeholder="Old Password" id="oldPassword">
+        <input type="password" placeholder="New Password" id="newPassword">
+        <input type="password" placeholder="Confirm password" id="confirmNewPassword">
+        <button type="submit" id="changePasswordBtn">Change Password</button>
+    </form>
+
+ <script src="./Profile.js"></script>
+</body>
+</html>

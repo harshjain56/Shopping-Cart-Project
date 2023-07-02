@@ -1,0 +1,167 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+
+.navbar{
+    background-color: black;
+    color: white;
+    display: flex;
+    
+    padding: 20px 18px 20px;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+   z-index: 1;
+}
+
+.left-navbar{
+    font-size: 1.5em;
+    flex-grow: 0.95;
+
+}
+
+.right-navbar{
+ 
+   display: flex;
+   gap: 25px;
+   
+}
+
+.right-navbar>a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.2em;
+
+}
+
+.right-navbar>a:hover{
+    color:  rgba(255, 255, 255, 0.94)
+}
+
+
+.checkoutContainer{
+    display: none;
+    border:1px solid black;
+    position: fixed;
+    top:100px;
+    right:70px;
+    width: 250px;
+    height: 70vh;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.checkoutContainer>h3{
+   text-align: center;
+  
+   font-size: 1.5em;
+}
+
+.checkoutItemsList{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 10px;
+    border-bottom: 2px solid white;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    height: 70%;
+}
+
+.checkoutItem{
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkoutItemtitle{
+   
+    width: 60%;
+}
+.totalContianer{
+
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px 15px 0px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+
+.checkoutContainer>button{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.checkoutContainer>button:hover{
+    background-color: gray;
+    color: white;
+}
+
+.MyCart{
+    position: absolute;
+    width: 70vw;
+    top:100px;
+    left: 20px;
+    padding: 20px;
+  
+}
+
+.MyCart>h2{
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.cartItems{
+    display: none;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+   
+    padding: 30px;
+   
+}
+
+.cartItem{
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  
+}
+.cartItem>img{
+   width: 95%;
+   height: 250px;
+   border: 1px solid black;
+   padding: 5px;
+}
+
+.productTitle{
+    border: 1px solid black;
+    height: 100px;
+    font-weight: bold;
+}
+
+.cartItem>button{
+    padding: 5px;
+    color: white;
+    background-color: black;
+}
+
+.cartItem>button:hover{
+    box-shadow: 0px 0px 5px black;
+}
+
+.messageDisplay{
+   
+    text-align: center;
+    margin-top: 50px;
+}
+

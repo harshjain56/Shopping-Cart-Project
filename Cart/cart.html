@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="./cart.css">
+</head>
+
+<body>
+    <nav id="navbar" class="navbar">
+        <div id="left-navbar" class="left-navbar">
+            <p>Me.shop</p>
+        </div>
+
+        <div id="right-navbar" class="right-navbar">
+            <a id="shopTab">Shop</a>
+            <a id="profileTab">Profile</a>
+            <a id="logoutTab">Logout</a>
+        </div>
+    </nav>
+
+    <div class="checkoutContainer" id="checkoutContainer">
+        <h3>CheckoutList</h3>
+        <div class="checkoutItemsList" id="checkoutItemList">
+        </div>
+        <div class="totalContianer">
+            <p>Total</p>
+            <p id="totalbillamount"></p>
+        </div>
+        <button id="checkoutbtn">Click to Checkout</button>
+    </div>
+
+
+    <div Class="MyCart">
+        <h2>MyCart</h2>
+        <div class="messageDisplay" id="messageDisplay">
+            <h3>The Cart Doesnt Contains any Product Go and Shop</h3>
+        </div>
+        <div class="cartItems" id="cartItemsContainer">
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./cart.js"></script>
+</body>
+
+</html>
